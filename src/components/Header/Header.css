@@ -25,3 +25,19 @@
     align-items: center;
     gap: 16px;
 }
+
+.theme-toggle svg {
+    transition: transform 0.15s;
+}
+
+.theme-toggle:hover svg {
+    transform: scale(1.2);
+}
+
+.theme-toggle:hover {
+    color: var(--theme-toggle-hover-color);
+}
+
+.theme-toggle:hover svg path {
+    fill: var(--theme-toggle-hover-color);
+}

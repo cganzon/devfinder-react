@@ -4,6 +4,7 @@
     --body-bg: #f6f8ff;
     --text-color-one: #4b6a9b;
     --text-color-two: #222731;
+    --theme-toggle-hover-color: #222731;
 }
 
 *,
@@ -18,6 +19,7 @@
     --body-bg: #141d2f;
     --text-color-one: #fff;
     --text-color-two: #fff;
+    --theme-toggle-hover-color: #90a4d4;
 }
 
 .App {
