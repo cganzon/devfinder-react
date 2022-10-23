@@ -29,6 +29,7 @@
     padding: 31px 24px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -39,7 +40,6 @@
 @media(min-width: 768px) {
     .App {
         padding: 31px 98px;
-        align-items: center;
     }
 
     .container {
