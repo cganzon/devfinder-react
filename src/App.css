@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
+:root {
+    --body-bg: #f6f8ff;
+    --text-color-one: #4b6a9b;
+    --text-color-two: #222731;
+}
+
 *,
 *::before,
 *::after {
@@ -8,8 +14,15 @@
     box-sizing: border-box;
 }
 
-body {
+.dark {
+    --body-bg: #141d2f;
+    --text-color-one: #fff;
+    --text-color-two: #fff;
+}
+
+.App {
+    height: 100vh;
     font-family: "Space Mono", monospace;
-    margin: 31px 24px;
-    background-color: #f6f8ff;
+    background-color: var(--body-bg);
+    padding: 31px 24px;
 }

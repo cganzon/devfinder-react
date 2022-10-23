@@ -12,7 +12,7 @@ export default function App() {
     };
 
     return (
-        <main className="container">
+        <main className={`App ${darkMode ? "dark" : ""}`}>
             <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <SearchBar />
             <UserData />
