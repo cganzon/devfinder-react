@@ -7,7 +7,6 @@ import "./App.css";
 export default function App() {
     const isDarkMode = JSON.parse(localStorage.getItem("dark-mode"));
     const [ darkMode, setDarkMode ] = useState(isDarkMode);
-    console.log(darkMode)
 
     function toggleDarkMode() {
         setDarkMode(prevDarkMode => !prevDarkMode);
