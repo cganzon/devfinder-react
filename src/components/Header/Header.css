@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website {
+    font-size: 26px;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
