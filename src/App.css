@@ -25,4 +25,22 @@
     font-family: "Space Mono", monospace;
     background-color: var(--body-bg);
     padding: 31px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex: 1;
+    max-width: 500px;
+}
+
+@media(min-width: 768px) {
+    .App {
+        padding: 31px 98px;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 730px;
+    }
 }
