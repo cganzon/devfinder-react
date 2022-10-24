@@ -23,8 +23,9 @@ export default function SearchBar(props) {
 
     return (
         <form className="search-form" onSubmit={handleSubmit}>
-            <input type="text" name="username" value={username} onChange={handleChange}/>
-            <button>Search</button>
+            <img className="search-icon" src="./images/icon-search.svg" alt="" />
+            <input type="text" className="username" placeholder="Search GitHub username" name="username" value={username} onChange={handleChange}/>
+            <button className="search-btn">Search</button>
         </form>
     );
 };
