@@ -3,6 +3,16 @@ import "./UserData.css";
 export default function UserData(props) {
     console.log(props.user);
 
+    function convertDate(datetime) {
+        const date = new Date(datetime);
+        const day = date.getDate();
+        const month = date.toLocaleString("default", { month: "short" });
+        const year = date.getFullYear();
+        return `${day} ${month} ${year}`;
+    };
+
+    const joinDate = convertDate(props.user.created_at);
+
     return (
         <section className="user-card">
             <div className="user-top">
@@ -12,7 +22,7 @@ export default function UserData(props) {
                         <h2 className="name">{props.user.name ? props.user.name : props.user.login}</h2>
                         <p className="login">@{props.user.login}</p>
                     </div>
-                    <p className="joined">Joined {props.user.created_at}</p>
+                    <p className="joined">Joined {joinDate}</p>
                 </div>
             </div>
             {/* <p>{props.user.bio ? props.user.bio : "This profile has no bio"}</p>
