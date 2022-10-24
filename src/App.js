@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
-import SearchBar from "./components/SearchBar";
+import SearchBar from "./components/SearchBar/SearchBar";
 import UserData from "./components/UserData";
 import "./App.css";
 
