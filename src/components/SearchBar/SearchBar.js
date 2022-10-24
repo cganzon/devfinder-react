@@ -1,16 +1,13 @@
 import { useState, useEffect } from "react";
 import "./SearchBar.css";
 
-export default function SearchBar() {
+export default function SearchBar(props) {
     const [ username, setUsername ] = useState("");
-    const [ userData, setUserData ] = useState({});
-
-    console.log(userData)
 
     function fetchUserData(username) {
         fetch(`https://api.github.com/users/${username}`)
             .then(res => res.json())
-            .then(data => setUserData(data));
+            .then(data => props.saveUserData(data));
     };
     
     function handleChange(e) {

@@ -7,9 +7,16 @@ import "./App.css";
 export default function App() {
     const isDarkMode = JSON.parse(localStorage.getItem("dark-mode"));
     const [ darkMode, setDarkMode ] = useState(isDarkMode);
+    const [ userData, setUserData ] = useState({});
+
+    console.log(userData);
 
     function toggleDarkMode() {
         setDarkMode(prevDarkMode => !prevDarkMode);
+    };
+
+    function saveUserData(user) {
+        setUserData(user);
     };
 
     useEffect(() => {
@@ -20,7 +27,7 @@ export default function App() {
         <div className={`App ${darkMode ? "dark" : ""}`}>
             <main className="container">
                 <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-                <SearchBar />
+                <SearchBar saveUserData={saveUserData} />
                 <UserData />
             </main>
         </div>
