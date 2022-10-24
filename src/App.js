@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import SearchBar from "./components/SearchBar/SearchBar";
-import UserData from "./components/UserData";
+import UserData from "./components/UserData/UserData";
 import "./App.css";
 
 export default function App() {
