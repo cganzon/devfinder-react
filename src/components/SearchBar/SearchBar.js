@@ -3,13 +3,24 @@ import "./SearchBar.css";
 
 export default function SearchBar() {
     const [ username, setUsername ] = useState("");
+
+    function fetchUserData(username) {
+        fetch(`https://api.github.com/users/${username}`)
+            .then(res => res.json())
+            .then(data => console.log(data));
+    }
     
     function handleChange(e) {
         setUsername(e.target.value);
     };
+    
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetchUserData(username);
+    }
 
     return (
-        <form className="search-form">
+        <form className="search-form" onSubmit={handleSubmit}>
             <input type="text" name="username" value={username} onChange={handleChange}/>
             <button>Search</button>
         </form>
