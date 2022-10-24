@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-:root {
-    --body-bg: #f6f8ff;
-    --text-color-one: #4b6a9b;
-    --text-color-two: #222731;
-    --theme-toggle-hover-color: #222731;
-}
-
 *,
 *::before,
 *::after {
@@ -15,11 +8,23 @@
     box-sizing: border-box;
 }
 
+.light {
+    --body-bg: #f6f8ff;
+    --text-color-one: #4b6a9b;
+    --text-color-two: #222731;
+    --theme-toggle-hover-color: #222731;
+}
+
 .dark {
     --body-bg: #141d2f;
     --text-color-one: #fff;
     --text-color-two: #fff;
     --theme-toggle-hover-color: #90a4d4;
+}
+
+.light,
+.dark {
+    transition: all 0.25s;
 }
 
 .App {

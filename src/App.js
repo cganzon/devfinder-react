@@ -22,7 +22,7 @@ export default function App() {
     }, [darkMode]);
 
     return (
-        <div className={`App ${darkMode ? "dark" : ""}`}>
+        <div className={`App ${darkMode ? "dark" : "light"}`}>
             <main className="container">
                 <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <SearchBar saveUserData={saveUserData} />
