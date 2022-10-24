@@ -26,7 +26,7 @@ export default function App() {
             <main className="container">
                 <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <SearchBar saveUserData={saveUserData} />
-                {/* <UserData user={userData} /> */}
+                <UserData user={userData} />
             </main>
         </div>
     );

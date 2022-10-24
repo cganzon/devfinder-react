@@ -26,13 +26,8 @@
     --box-shadow: none;
 }
 
-.light,
-.dark {
-    transition: all 0.25s;
-}
-
 .App {
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Space Mono", monospace;
     background-color: var(--body-bg);
     padding: 31px 24px;
@@ -42,6 +37,7 @@
 }
 
 .container {
+    min-height: 100vh;
     flex: 1;
     max-width: 500px;
 }
