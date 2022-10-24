@@ -1,0 +1,37 @@
+.user-card {
+    color: var(--text-color-one);
+    background-color: var(--app-bg);
+    border-radius: 15px;
+    padding: 32px 24px;
+    box-shadow: var(--box-shadow);
+}
+
+.user-top {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 33px;
+}
+
+.avatar {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--text-color-two);
+    font-size: 16px;
+    line-height: 23.7px;
+}
+
+.login {
+    color: #0097ff;
+    font-size: 13px;
+    line-height: 19.25px;
+    margin-bottom: 6px;
+}
+
+.joined {
+    font-size: 13px;
+    line-height: 19.25px;
+}

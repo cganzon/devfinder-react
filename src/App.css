@@ -10,9 +10,10 @@
 
 .light {
     --body-bg: #f6f8ff;
-    --app-bg: #fff;
+    --app-bg: #fefefe;
     --text-color-one: #4b6a9b;
     --text-color-two: #222731;
+    --text-color-three: #697c9a;
     --theme-toggle-hover-color: #222731;
     --box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 }
@@ -22,6 +23,7 @@
     --app-bg: #1e2a47;
     --text-color-one: #fff;
     --text-color-two: #fff;
+    --text-color-three: #fff;
     --theme-toggle-hover-color: #90a4d4;
     --box-shadow: none;
 }
