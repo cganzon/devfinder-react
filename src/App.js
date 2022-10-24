@@ -9,8 +9,6 @@ export default function App() {
     const [ darkMode, setDarkMode ] = useState(isDarkMode);
     const [ userData, setUserData ] = useState({});
 
-    console.log(userData);
-
     function toggleDarkMode() {
         setDarkMode(prevDarkMode => !prevDarkMode);
     };
@@ -28,7 +26,7 @@ export default function App() {
             <main className="container">
                 <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <SearchBar saveUserData={saveUserData} />
-                <UserData />
+                <UserData user={userData} />
             </main>
         </div>
     );
