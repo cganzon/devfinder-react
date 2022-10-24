@@ -4,6 +4,8 @@ import "./SearchBar.css";
 export default function SearchBar(props) {
     const [ username, setUsername ] = useState("");
 
+    useEffect(() => fetchUserData("octocat"), []);
+
     function fetchUserData(username) {
         fetch(`https://api.github.com/users/${username}`)
             .then(res => res.json())
