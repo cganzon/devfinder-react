@@ -9,7 +9,13 @@ export default function SearchBar(props) {
     function fetchUserData(username) {
         fetch(`https://api.github.com/users/${username}`)
             .then(res => res.json())
-            .then(data => props.saveUserData(data));
+            .then(data => {
+                if(data.message ==="Not Found") {
+                    console.log("No results");
+                } else {
+                    props.saveUserData(data);
+                };
+            });
     };
     
     function handleChange(e) {
