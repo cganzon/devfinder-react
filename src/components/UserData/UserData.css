@@ -35,3 +35,51 @@
     font-size: 13px;
     line-height: 19.25px;
 }
+
+@media(min-width: 768px) {
+    .user-card {
+        padding: 40px;
+    }
+
+    .user-top {
+        gap: 37px;
+    }
+
+    .avatar {
+        width: 117px;
+    }
+
+    .name {
+        font-size: 26px;
+        line-height: 38.51px;
+        margin-bottom: 2px;
+    }
+
+    .login {
+        font-size: 16px;
+        line-height: 23.7px;
+        margin-bottom: 4px;
+    }
+
+    .joined {
+        font-size: 15px;
+        line-height: 22.22px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .user-card {
+        padding: 48px;
+    }
+
+    .user-info {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-self: flex-start;
+    }
+
+    .joined {
+        margin-top: 8px;
+    }
+}
