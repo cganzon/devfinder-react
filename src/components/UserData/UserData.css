@@ -32,6 +32,7 @@
 }
 
 .joined {
+    color: var(--text-color-three);
     font-size: 13px;
     line-height: 19.25px;
 }
