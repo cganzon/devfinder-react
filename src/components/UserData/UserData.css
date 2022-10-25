@@ -37,6 +37,12 @@
     line-height: 19.25px;
 }
 
+.bio {
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 23px;
+}
+
 @media(min-width: 768px) {
     .user-card {
         padding: 40px;
@@ -44,6 +50,7 @@
 
     .user-top {
         gap: 37px;
+        margin-bottom: 24px;
     }
 
     .avatar {
@@ -66,6 +73,11 @@
         font-size: 15px;
         line-height: 22.22px;
     }
+
+    .bio {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
 }
 
 @media(min-width: 1024px) {
@@ -82,5 +94,11 @@
 
     .joined {
         margin-top: 8px;
+    }
+
+    .user-bottom {
+        width: 480px;
+        margin-left: auto;
+        margin-top: -60px;
     }
 }

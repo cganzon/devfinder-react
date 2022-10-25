@@ -25,8 +25,10 @@ export default function UserData(props) {
                     <p className="joined">Joined {joinDate}</p>
                 </div>
             </div>
-            {/* <p>{props.user.bio ? props.user.bio : "This profile has no bio"}</p>
-            <p>Repos: {props.user.public_repos}</p>
+            <div className="user-bottom">
+                <p className="bio">{props.user.bio ? props.user.bio : "This profile has no bio"}</p>
+            </div>
+            {/* <p>Repos: {props.user.public_repos}</p>
             <p>Followers: {props.user.followers}</p>
             <p>Following: {props.user.following}</p>
             <p>Location: {props.user.location ? props.user.location : "Not Available"}</p>
