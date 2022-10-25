@@ -26,7 +26,7 @@ export default function UserData(props) {
                 </div>
             </div>
             <div className="user-bottom">
-                <p className="bio">{props.user.bio ? props.user.bio : "This profile has no bio"}</p>
+                <p className={`bio ${!props.user.bio ? "not-available": ""}`}>{props.user.bio ? props.user.bio : "This profile has no bio"}</p>
             </div>
             {/* <p>Repos: {props.user.public_repos}</p>
             <p>Followers: {props.user.followers}</p>

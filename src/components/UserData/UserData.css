@@ -1,3 +1,7 @@
+.not-available {
+    opacity: 0.5;
+}
+
 .user-card {
     color: var(--text-color-one);
     background-color: var(--app-bg);
