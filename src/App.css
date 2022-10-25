@@ -39,7 +39,6 @@
 }
 
 .container {
-    min-height: 100vh;
     flex: 1;
     max-width: 500px;
 }
