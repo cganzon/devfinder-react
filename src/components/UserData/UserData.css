@@ -54,6 +54,7 @@
     justify-content: space-evenly;
     text-align: center;
     padding: 18px 0px;
+    margin-bottom: 24px;
 }
 
 .stat-title {
@@ -105,6 +106,25 @@
         font-size: 15px;
         margin-bottom: 32px;
     }
+
+    .stats {
+        text-align: left;
+        gap: 90px;
+        justify-content: space-evenly;
+        padding: 16px 96px 16px 32px;
+        margin-bottom: 30px;
+    }
+
+    .stat-title {
+        font-size: 13px;
+        line-height: 19.25px;
+        margin-bottom: 1px;
+    }
+
+    .stat-number {
+        font-size: 22px;
+        line-height: 32.58px;
+    }
 }
 
 @media(min-width: 1024px) {
@@ -127,5 +147,9 @@
         width: 480px;
         margin-left: auto;
         margin-top: -60px;
+    }
+
+    .stats {
+        margin-bottom: 37px;
     }
 }
