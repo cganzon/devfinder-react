@@ -27,11 +27,22 @@ export default function UserData(props) {
             </div>
             <div className="user-bottom">
                 <p className={`bio ${!props.user.bio ? "not-available": ""}`}>{props.user.bio ? props.user.bio : "This profile has no bio"}</p>
+                <div className="stats">
+                    <div className="stat">
+                        <h3 className="stat-title">Repos</h3>
+                        <p className="stat-number">{props.user.public_repos}</p>
+                    </div>
+                    <div className="stat">
+                        <h3 className="stat-title">Followers</h3>
+                        <p className="stat-number">{props.user.followers}</p>
+                    </div>
+                    <div className="stat">
+                        <h3 className="stat-title">Followng</h3>
+                        <p className="stat-number">{props.user.following}</p>
+                    </div>
+                </div>
             </div>
-            {/* <p>Repos: {props.user.public_repos}</p>
-            <p>Followers: {props.user.followers}</p>
-            <p>Following: {props.user.following}</p>
-            <p>Location: {props.user.location ? props.user.location : "Not Available"}</p>
+            {/* <p>Location: {props.user.location ? props.user.location : "Not Available"}</p>
             <p>Blog: {props.user.blog ? props.user.blog : "Not Available"}</p>
             <p>Twitter: {props.user.twitter_username ? props.user.twitter_username : "Not Available"}</p>
             <p>Company: {props.user.company ? props.user.company : "Not Available"}</p> */}

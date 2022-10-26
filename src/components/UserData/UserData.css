@@ -47,6 +47,29 @@
     margin-bottom: 23px;
 }
 
+.stats {
+    background-color: var(--body-bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 18px 0px;
+}
+
+.stat-title {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.29px;
+    margin-bottom: 8px;
+}
+
+.stat-number {
+    color: var(--text-color-two);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+}
+
 @media(min-width: 768px) {
     .user-card {
         padding: 40px;
