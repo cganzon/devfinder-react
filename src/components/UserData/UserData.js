@@ -25,7 +25,7 @@ export default function UserData(props) {
                     <p className="joined">Joined {joinDate}</p>
                 </div>
             </div>
-            <div className="user-bottom">
+            <div className="user-middle">
                 <p className={`bio ${!props.user.bio ? "not-available": ""}`}>{props.user.bio ? props.user.bio : "This profile has no bio"}</p>
                 <div className="stats">
                     <div className="stat">
