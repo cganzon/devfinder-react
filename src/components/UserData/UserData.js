@@ -37,7 +37,7 @@ export default function UserData(props) {
                         <p className="stat-number">{props.user.followers}</p>
                     </div>
                     <div className="stat">
-                        <h3 className="stat-title">Followng</h3>
+                        <h3 className="stat-title">Following</h3>
                         <p className="stat-number">{props.user.following}</p>
                     </div>
                 </div>
