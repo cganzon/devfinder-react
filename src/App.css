@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .light {
     --body-bg: #f6f8ff;
     --app-bg: #fefefe;
