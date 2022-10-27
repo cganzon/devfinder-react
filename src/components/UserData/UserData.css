@@ -7,6 +7,7 @@
     background-color: var(--app-bg);
     border-radius: 15px;
     padding: 32px 24px;
+    font-size: 13px;
     box-shadow: var(--box-shadow);
 }
 
@@ -30,19 +31,16 @@
 
 .login {
     color: #0097ff;
-    font-size: 13px;
     line-height: 19.25px;
     margin-bottom: 6px;
 }
 
 .joined {
     color: var(--text-color-three);
-    font-size: 13px;
     line-height: 19.25px;
 }
 
 .bio {
-    font-size: 13px;
     line-height: 25px;
     margin-bottom: 23px;
 }
@@ -72,9 +70,9 @@
 }
 
 .link-wrapper {
-    font-size: 13px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 13px;
     margin-bottom: 13px;
 }
@@ -132,6 +130,21 @@
     .stat-number {
         font-size: 22px;
         line-height: 32.58px;
+    }
+
+    .user-bottom {
+        display: flex;
+        gap: 62px;
+    }
+
+    .link-wrapper {
+        font-size: 15px;
+        margin-bottom: 19px;
+        gap: 16px;
+    }
+
+    .link-wrapper:nth-child(2n + 2) {
+        margin-bottom: 0;
     }
 }
 
