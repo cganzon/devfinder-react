@@ -71,6 +71,14 @@
     line-height: 23.7px;
 }
 
+.link-wrapper {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 13px;
+}
+
 @media(min-width: 768px) {
     .user-card {
         padding: 40px;
@@ -151,5 +159,10 @@
 
     .stats {
         margin-bottom: 37px;
+    }
+
+    .user-bottom {
+        width: 480px;
+        margin-left: auto;
     }
 }
