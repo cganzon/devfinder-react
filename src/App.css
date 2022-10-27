@@ -49,7 +49,7 @@ a:hover {
 
 .container {
     flex: 1;
-    max-width: 500px;
+    max-width: 480px;
 }
 
 @media(min-width: 768px) {
@@ -57,6 +57,12 @@ a:hover {
         padding: 31px 98px;
     }
 
+    .container {
+        max-width: 650px;
+    }
+}
+
+@media(min-width: 1024px) {
     .container {
         max-width: 730px;
     }
