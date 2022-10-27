@@ -1,7 +1,6 @@
 import "./UserData.css";
 
 export default function UserData(props) {
-    console.log(props.user);
 
     function convertDate(datetime) {
         const date = new Date(datetime);
@@ -22,7 +21,6 @@ export default function UserData(props) {
     };
 
     const joinDate = convertDate(props.user.created_at);
-
 
     return (
         <section className="user-card">
