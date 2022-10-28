@@ -47,6 +47,7 @@ Users should be able to:
 - Local storage
 - Mobile-first workflow
 - Flexbox
+- CSS custom properties
 
 ### What I learned
 
@@ -59,6 +60,7 @@ I would like to learn more about the different React hooks in the future. I was 
 ### Useful resources
 
 - [FCC React Beginner Course](https://www.youtube.com/watch?v=bMknfKXIFA8&t=36252s&ab_channel=freeCodeCamp.org) - I essentially used everything I learned in this video to build this app, so I recommend checking it out if you're looking to take your first dive into React!
+- [Create a Persisting Dark Mode with React](https://www.pullrequest.com/blog/create-a-persisting-dark-mode-with-react/) - I used this blog post to help me implement the persisting light/dark mode functionality.
 
 ## Author
 
