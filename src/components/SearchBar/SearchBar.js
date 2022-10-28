@@ -12,11 +12,11 @@ export default function SearchBar(props) {
             .then(res => res.json())
             .then(data => {
                 if(data.message === "Not Found") {
-                    console.log("No results");
                     setError(true);
                 } else {
                     setError(false);
                     props.saveUserData(data);
+                    setUsername("");
                 };
             });
     };
