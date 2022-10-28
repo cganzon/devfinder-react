@@ -29,7 +29,7 @@ export default function UserData(props) {
                 <div className="user-info">
                     <div className="user-info-inner">
                         <h2 className="name">{props.user.name ? props.user.name : props.user.login}</h2>
-                        <p className="login">@{props.user.login}</p>
+                        <a className="login" href={`https://github.com/${props.user.login}`} target="_blank" rel="noreferrer">@{props.user.login}</a>
                     </div>
                     <p className="joined">Joined {joinDate}</p>
                 </div>

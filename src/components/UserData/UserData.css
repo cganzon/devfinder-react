@@ -30,6 +30,7 @@
 }
 
 .login {
+    display: inline-block;
     color: #0097ff;
     line-height: 19.25px;
     margin-bottom: 6px;
