@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./SearchBar.css";
 
-export default function SearchBar(props) {
+export default function SearchBar({ saveUserData }) {
     const [ username, setUsername ] = useState("");
     const [ error, setError] = useState(false);
 
@@ -15,7 +15,7 @@ export default function SearchBar(props) {
                     setError(true);
                 } else {
                     setError(false);
-                    props.saveUserData(data);
+                    saveUserData(data);
                     setUsername("");
                 };
             });
