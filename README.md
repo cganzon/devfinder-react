@@ -44,6 +44,7 @@ Users should be able to:
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
+- [GitHub Users API](https://docs.github.com/en/rest/reference/users#get-a-user)
 - Local storage
 - Mobile-first workflow
 - Flexbox
